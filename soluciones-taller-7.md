@@ -77,3 +77,15 @@ Así, se suplen las dos condiciones para que $\varphi$ represente una acción y 
 - La acción definida por 
 $$\begin{align*}\varphi:\mathbb{Z}_3\times \mathbb{Z}_2 &\to \mathbb{Z}_2\\ (\overline{n},\overline{m})&\mapsto \overline{n+m}\end{align*}$$
 Usando la asociatividad de la suma en $\mathbb{Z_2}$ y que el $\overline{0}$ es neutro en ambos grupos.
+>Aquí no supe sacar más acciones de manera intuitiva.
+
+### Análisis más profundo:
+Intentando asignar manualmente una imágen a cada elemento, primero comprendiendo a $\mathbb{Z_3}:=\{a:a^3=e\}$  y a $\mathbb{Z_2}:=\{a':(a')^2=e'\}$ vemos que es de la forma:
+$$\begin{align*}\varphi:\mathbb{Z_3\times Z_2}&\to\mathbb{\Z_2}\\(e,e')&\mapsto e'\\ (e,a')&\mapsto a'\\(a,e')&\mapsto ae'\\(a,a')&\mapsto aa'\\(a^2,e')&\mapsto a^2e'\\(a^2, a')&\mapsto a^2a'\end{align*}$$
+Dado que estamos trabajando con acciones y un grupo cíclico abeliano, sabemos que $\varphi(a^{n+1},x)=\varphi(a\cdot a^n, x)=\varphi(a,\varphi(a^n,x))$ por lo que podemos definir las acciones de forma recursiva, así, sólo tenemos que definir $ae'$ y $aa'$, usando que $|\mathbb{Z_2}|=2$ y que tanto $ae'$ como $aa'$ deben ser elementos de este, podemos definir cuatro acciones $\varphi_i$ distintas:
+- $\varphi_0:$ Si $ae'=e'$ y $aa'=a'$, entonces $a^2e'=a(ae')=a(e')=e'$ y análogamente $a^2a'=a'$, por lo que $\varphi_0$ representa la acción trivial.
+- $\varphi_1:$ Si $ae'=a'$ y $aa'=e'$, entonces $a^2e'=a(ae')=a(a')=e'$ y análogamente $a^2a'=a'$, por lo que $\varphi_1$ coincide con la segunda acción que definimos arriba.
+> Aquí asumo que puede darse que $aa'$ puede ser igual a $ae'$, por lo que ví sigue siendo acción.
+- $\varphi_2:$ Si $ae'=e'=aa'$ entonces $a^2e'=a(ae')=ae'=e'=aa'=a^2a'$.
+- $\varphi_3:$ Si $ae'=a'=aa'$ entonces $a^2e'=a(ae')=aa'=a'=ae'=a^2a'$.
+> ¿Son las únicas? Como lo veo si en lugar de definir $ae'$ y $aa'$ defino $a^2e'$ y $a^2a'$ como $(a^2)^2=a$ entonces necesariamente debo usarlos para definir $ae'$ y $aa'$. Entonces no conozco otra forma de construir una acción diferente.
