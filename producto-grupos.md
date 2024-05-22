@@ -108,8 +108,12 @@ Veamos que esta estrucutra define un grupo:
 - **Asociatividad:** Sean $(a_1,a_2),(b_1,b_2),(c_1,c_2)\in G_1\rtimes G_2$,$$\begin{align*}[(a_1,a_2)(b_1,b_2)](c_1,c_2)&=(a_1\varphi_{a_2}(b_1),a_2b_2)(c_1,c_2)\\&=(a_1\varphi_{a_2}(b_1)\varphi_{a_2b_2}(c_1),a_2b_2c_2)\\ &=(a_1\varphi_{a_2}(b_1)\varphi_{a_2}(\varphi_{b_2}(c_1)),a_2b_2c_2) \\ &=(a_1\varphi_{a_2}(b_1\varphi_{b_2}(c_1)),a_2b_2c_2) \\ &=(a_1,a_2)[(b_1\varphi_{b_2}(c_1),b_2c_2)] \\ &=(a_1,a_2)[(b_1,b_2)(c_1,c_2)]\end{align*}$$
 - **Elemento neutro:** Existe $(e_1,e_2)$ tal que para todo $(a,b)\in G_1\rtimes G_2$
 $$(a,b)(e_1,e_2)=(a\varphi_{b}(e_1),be_2)=(ae_1,b)=(a,b)$$
-- **Elemento inverso:** Para todo $(a,b)\in G_1\rtimes G_2$,podemos definir $(\varphi_{b^{-1}}(a^{-1}),b^{-1})$ tal que$$\begin{align*}(a,b)(\varphi_{b^{-1}}(a^{-1}),b^{-1})&=(a\varphi_b(\varphi_{b^{-1}}(a^{-1})),bb^{-1}) \\ &= (a\varphi_{bb^{-1}}(a^{-1}),e_2) \\ &=(a\varphi_{e_2}(a^{-1}),e_2) \\ &= (aa^{-1},bb^{-1}) \\ &= (e_1,e_2)\end{align*}$$
+- **Elemento inverso:** Para todo $(a,b)\in G_1\rtimes G_2$,podemos definir $(\varphi_{b^{-1}}(a^{-1}),b^{-1})$ tal que $$\begin{align*}(a,b)(\varphi_{b^{-1}}(a^{-1}),b^{-1})&=(a\varphi_b(\varphi_{b^{-1}}(a^{-1})),bb^{-1}) \\ &= (a\varphi_{bb^{-1}}(a^{-1}),e_2) \\ &=(a\varphi_{e_2}(a^{-1}),e_2) \\ &= (aa^{-1},bb^{-1}) \\ &= (e_1,e_2)\end{align*}$$
 
 # Teorema Fundamental de grupos abelianos finitamente generados:
-Sea $G$ un grupo abeliano, $G$ es isomorfo a$$\mathbb{Z_{p_1^{k_1}}}\times\mathbb{Z_{p_2^{k_2}}}\times...\times\mathbb{Z_{p_n^{k_n}}}\times\mathbb{Z}\times...\times\mathbb{Z}$$Donde $p_i$ son números primos no necesariamente distintos y $k_i\in\mathbb{N}$ para todo $1\leq i\leq n$. Este producto es único salvo presentación. Esto es,$$G\cong\prod_{i=1}^n\mathbb{Z_{p_i}^{k_i}}\times\mathbb{Z}^m$$
+Sea $G$ un grupo abeliano, $G$ es isomorfo a $$\mathbb{Z_{p_1^{k_1}}}\times\mathbb{Z_{p_2^{k_2}}}\times...\times\mathbb{Z_{p_n^{k_n}}}\times\mathbb{Z}\times...\times\mathbb{Z}$$Donde $p_i$ son números primos no necesariamente distintos y $k_i\in\mathbb{N}$ para todo $1\leq i\leq n$. 
+
+Este producto es único salvo presentación. 
+
+Esto es, $$G\cong\prod_{i=1}^n\mathbb{Z_{p_i}^{k_i}}\times\mathbb{Z}^m$$
 Donde $n$ y $m$ son únicos.
