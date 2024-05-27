@@ -1,4 +1,8 @@
 # Teoría de Sylow
+### Definiciones
+> - Un grupo $G$ donde todo elemento de $G$ tiene orden una potencia de un primo $p$ es llamado un $p$-grupo.
+> - Si $H\leq G$ y $H$ es un $p$-grupo, entonces decimos que $H$ es un $p$-subgrupo de $G$.
+
 Los teoremas de Sylow son una ayuda inmensa para describir propiedades de los subgrupos de un grupo $G$ sólo a partir de su orden, para exponerlos tenemos que primero ver un *lema* importante:
 ### Lema:
 Si un grupo $H$ de orden $p^n$ con $p$ primo actúa sobre un conjunto finito $S$ y si $S_0=\{x\in S:hx=x,\ \forall h\in H\}$, entonces $|S|\equiv|S_0|\text{ mod}(p)$.
@@ -53,3 +57,31 @@ La idea para demostrar que existen los $i$ gruos de orden $p^i$ gira alrededor d
     
     Así, ya probamos que existe al menos un subgrupo con orden $p^i$ para cada $1\leq i\leq n$.
 4. Vemos que con el paso inductivo ya tenemos que $H\unlhd H'$ pues $H'\subseteq N_G(H)$. Así queda demostrado el teorema.
+### Definición:
+> - Si $|G|=p^nm$ donde $p$ es primo y $m$ un entero tal que $(p,m)=1$, entonces un subgrupo $H\leq G$ que cumpla que $|H|=p^n$ es llamado un $p$-subgrupo de Sylow.
+> 
+> Revisar esta definición
+## $2^{\text{do}}\text{ Teorema de Sylow: }$
+Si $H$ es un $p$-subgrupo de un grupo finito $G$, y $P$ es un $p$-subgrupo de Sylow de $G$, entonces existe $x\in G$ tal que $H<xPx^{-1}$. En particular, dos $p$-subgrupos de Sylow de $G$ son conjungados.
+### Resumen de la demostración:
+1. Definimos a $S$ como el conjunto de todas las clases módulo $P$.
+2. Hacemos a $H$ actuar sobre $S$ por medio de traslación a izquierda. Dada esta acción podemos definir
+    $$S_0=\{xP\in S:hxP=xP,\forall h\in H\}$$
+3. Por Lema, $|S|\equiv |S_0|\text{ mod}(p)$ donde $|S|=[G:P]$.
+4. Sabemos que $|G|=p^nm$ para algún primo $p$ y un natural $m$ tales que $(p,m)=1$, como $P$ es un $p$-subgrupo de Sylow, es el máximo subgrupo con orden potencia de $p$, esto es $|P|=p^n$ y por tanto $[G:P]=m$.
+5. Como $(p,m)=1$, $p\nmid |S|$ luego $|S_0|\not\equiv 0\text{ mod}(p)$ y por tanto existe $xP\in S_0$.
+6. Tenemos que
+   $$\begin{align*}xP\in S_0&\Leftrightarrow hxP=xP, &\forall h\in H\\&\Leftrightarrow x^{-1}hxP=P, &\forall h\in H\\&\Leftrightarrow x^{-1}HxP=P\end{align*}$$
+   Ahora bien, sea $H'=x^{-1}Hx$. Si $H'P=P$ necesariamente todo elemento de $H$ debe pertenecer a $P$, pues es cerrado algebráicamente. Por tanto:
+   $$\begin{align*}xP\in S_0&\Leftrightarrow x^{-1}Hx\leq P\\&\Leftrightarrow H\leq xPx^{-1}\end{align*}$$
+   Para algún $x\in G$, y por tanto $H$ es subgrupo de una conjugación de $P$.
+## $3^{\text{er}}\text{ Teorema de Sylow}$
+Si $G$ es un grupo finito y $p$ un primo, entonces el número $n$ de $p$-subgrupos de Sylow de $G$ divide a $|G|$ y es de la forma $kp+1$ para algún $k\in\mathbb{N}$.
+### Resumen de la demostración:
+1. Por el segundo Teorema de Sylow sabemos que el número $n$ de $p$-subgrupos de Sylow para un $p$ primo particular es el número de conjugaciones de $H$, donde $H$ es algún $p$-subgrupo de Sylow.
+2. Así, sabemos que $n=[G:N_G(H)]$, un divisor de $G$.
+3. Definamos $S$ como el conjunto de todos los $p$-subgrupos de Sylow y hagamos actuar a $H$ sobre $S$ por conjugación.
+4. Nuevamente usamos a $S_o=\{K\in S:hKh^{-1}=K, \forall h\in H\}$, naturalmente $S_0\neq\varnothing$ pues $H\in S_0$.
+5. Ahora bien, sabemos que $H\unlhd N_G(H)$ y que $H\lneq N_G(H)$. También sabemos que para cualquier $K\in S$, $H=gKg^{-1}$ para algún $g\in G$. (Por el segundo teorema de Sylow)
+6. Por lo tanto, para cualquier $P\in S_0$, se tiene que $hPh^{-1}=P$ para todo $h\in H$ por lo que $P\unlhd N_G(H)$ pero como $|H|=|P|$, necesariamente $H=P$ y por tanto, $|S_0|=1$.
+7. Luego $n=|S|\equiv |S_0|\equiv 1\text{ mod}(p)$ por lo que $n=kp+1$ para algún natural $k$.
