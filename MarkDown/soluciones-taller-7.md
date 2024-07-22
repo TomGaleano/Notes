@@ -5,16 +5,17 @@
 ![figura 16.9](https://hackmd.io/_uploads/ryi9MzrXA.png)
 
 Sea $X=\{1,2,3,4,s_1,s_2,s_3,s_4,m_1,m_2,d_1,d_2,C,P_1,P_2,P_4\}$ y sea $\varphi$ una acción de $G$ en $X$ descrita en la siguiente tabla:
-|               | $1$ | $2$ | $3$ | $4$ | $s_1$ | $s_2$ | $s_3$ | $s_4$ | $m_1$ | $m_2$ | $d_1$ | $d_2$ | $C$ | $P_1$ | $P_2$ | $P_3$ | $P_4$ |
-|---------------|-----|-----|-----|-----|-------|-------|-------|-------|-------|-------|-------|-------|-----|-------|-------|-------|-------|
-| $\rho_0$      | $1$ | $2$ | $3$ | $4$ | $s_1$ | $s_2$ | $s_3$ | $s_4$ | $m_1$ | $m_2$ | $d_1$ | $d_2$ | $C$ | $P_1$ | $P_2$ | $P_3$ | $P_4$ |
-| $\rho_1$      | $2$ | $3$ | $4$ | $1$ | $s_2$ | $s_3$ | $s_4$ | $s_1$ | $m_2$ | $m_1$ | $d_2$ | $d_1$ | $C$ | $P_2$ | $P_3$ | $P_4$ | $P_1$ |
-| $\rho_2$      | $3$ | $4$ | $1$ | $2$ | $s_3$ | $s_4$ | $s_1$ | $s_2$ | $m_1$ | $m_2$ | $d_1$ | $d_2$ | $C$ | $P_3$ | $P_4$ | $P_1$ | $P_2$ |
-| $\rho_3$      | $4$ | $1$ | $2$ | $3$ | $s_4$ | $s_1$ | $s_2$ | $s_3$ | $m_2$ | $m_1$ | $d_2$ | $d_1$ | $C$ | $P_4$ | $P_1$ | $P_2$ | $P_3$ |
-| $\mu_1$       | $2$ | $1$ | $4$ | $3$ | $s_1$ | $s_4$ | $s_3$ | $s_2$ | $m_1$ | $m_2$ | $d_2$ | $d_1$ | $C$ | $P_1$ | $P_4$ | $P_3$ | $P_2$ |
-| $\mu_2$       | $4$ | $3$ | $2$ | $1$ | $s_3$ | $s_2$ | $s_1$ | $s_4$ | $m_1$ | $m_2$ | $d_2$ | $d_1$ | $C$ | $P_3$ | $P_2$ | $P_1$ | $P_4$ |
-| $\delta_1$    | $3$ | $2$ | $1$ | $4$ | $s_2$ | $s_1$ | $s_4$ | $s_3$ | $m_2$ | $m_1$ | $d_1$ | $d_2$ | $C$ | $P_2$ | $P_1$ | $P_4$ | $P_3$ |
-| $\delta_2$    | $1$ | $4$ | $3$ | $2$ | $s_4$ | $s_3$ | $s_2$ | $s_1$ | $m_2$ | $m_1$ | $d_1$ | $d_2$ | $C$ | $P_4$ | $P_3$ | $P_2$ | $P_1$ |
+
+|            | $1$ | $2$ | $3$ | $4$ | $s_1$ | $s_2$ | $s_3$ | $s_4$ | $m_1$ | $m_2$ | $d_1$ | $d_2$ | $C$ | $P_1$ | $P_2$ | $P_3$ | $P_4$ |
+| ---------- | --- | --- | --- | --- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | --- | ----- | ----- | ----- | ----- |
+| $\rho_0$   | $1$ | $2$ | $3$ | $4$ | $s_1$ | $s_2$ | $s_3$ | $s_4$ | $m_1$ | $m_2$ | $d_1$ | $d_2$ | $C$ | $P_1$ | $P_2$ | $P_3$ | $P_4$ |
+| $\rho_1$   | $2$ | $3$ | $4$ | $1$ | $s_2$ | $s_3$ | $s_4$ | $s_1$ | $m_2$ | $m_1$ | $d_2$ | $d_1$ | $C$ | $P_2$ | $P_3$ | $P_4$ | $P_1$ |
+| $\rho_2$   | $3$ | $4$ | $1$ | $2$ | $s_3$ | $s_4$ | $s_1$ | $s_2$ | $m_1$ | $m_2$ | $d_1$ | $d_2$ | $C$ | $P_3$ | $P_4$ | $P_1$ | $P_2$ |
+| $\rho_3$   | $4$ | $1$ | $2$ | $3$ | $s_4$ | $s_1$ | $s_2$ | $s_3$ | $m_2$ | $m_1$ | $d_2$ | $d_1$ | $C$ | $P_4$ | $P_1$ | $P_2$ | $P_3$ |
+| $\mu_1$    | $2$ | $1$ | $4$ | $3$ | $s_1$ | $s_4$ | $s_3$ | $s_2$ | $m_1$ | $m_2$ | $d_2$ | $d_1$ | $C$ | $P_1$ | $P_4$ | $P_3$ | $P_2$ |
+| $\mu_2$    | $4$ | $3$ | $2$ | $1$ | $s_3$ | $s_2$ | $s_1$ | $s_4$ | $m_1$ | $m_2$ | $d_2$ | $d_1$ | $C$ | $P_3$ | $P_2$ | $P_1$ | $P_4$ |
+| $\delta_1$ | $3$ | $2$ | $1$ | $4$ | $s_2$ | $s_1$ | $s_4$ | $s_3$ | $m_2$ | $m_1$ | $d_1$ | $d_2$ | $C$ | $P_2$ | $P_1$ | $P_4$ | $P_3$ |
+| $\delta_2$ | $1$ | $4$ | $3$ | $2$ | $s_4$ | $s_3$ | $s_2$ | $s_1$ | $m_2$ | $m_1$ | $d_1$ | $d_2$ | $C$ | $P_4$ | $P_3$ | $P_2$ | $P_1$ |
 
 1. Encuentre los conjuntos $X_\sigma$ para cada $\sigma\in G$:
    
@@ -150,3 +151,50 @@ Dado que estamos trabajando con acciones y un grupo cíclico abeliano, sabemos q
 - $\varphi_3:$ Si $ae'=a'=aa'$ entonces $a^2e'=a(ae')=aa'=a'=ae'=a^2a'$.
   
   > ¿Son las únicas? Como lo veo si en lugar de definir $ae'$ y $aa'$ defino $a^2e'$ y $a^2a'$ como $(a^2)^2=a$ entonces necesariamente debo usarlos para definir $ae'$ y $aa'$. Entonces no conozco otra forma de construir una acción diferente.
+
+## ¿Teorema?
+
+### Sean $\mathbb{Z_m}$ y $\mathbb{Z_n}$ con $(m,n)=1$ y $\Phi:=\{\varphi:\mathbb{Z_m\times Z_n}\to\mathbb{Z_n}\ |\ \varphi\text{ es una acción}\}$, entonces $|\Phi|=|S_n|=n!$
+
+> No me cuadra ese $(m,n)=1$. Lo importante es hacer que $\alpha^m=e$ para todo $\alpha\in S_n$. ¿Cómo?
+
+Planteemos la función 
+
+$$
+\begin{align*}
+f:S_n&\to\Phi\\
+\alpha&\mapsto \varphi_\alpha
+\end{align*}
+$$
+
+Donde
+
+$$
+\begin{align*}\varphi_\alpha:\mathbb{Z_m\times Z_n}&\to\mathbb{Z_n}\\ (m,n)&\mapsto \alpha^m(n)\end{align*}
+$$
+
+##### Primero, veamos que efectivamente $\varphi_\alpha\in\Phi$.
+
+- $\varphi_\alpha(0,n)=\alpha^0(n)=I(n)=n$, $\forall n\in\mathbb{Z_n}$.
+
+- $\varphi_\alpha(m_1+m_2,n)=\alpha^{m_1+m_2}(n)=\alpha^{m_1}(\alpha^{m_2}(n))=\varphi_\alpha(m_1,\varphi_\alpha(m_2,n)).$
+
+Además, dado que $\mathbb{Z_m}$ es finito y cíclico, necesitamos que si $m_1+m_2\equiv_m0$, entonces $\varphi_\alpha(m_1+m_2,n)=\varphi_\alpha(0,n)$. Como $(m,n)=1$ y $m_1+m_2=km$ con $k\in\mathbb{N}$, entonces $\alpha^{m_1+m_2}(n)=\alpha^{km}(n)=(\alpha^m)^k(n)=I^k(n)=I (n)=\varphi_\alpha(0,n)$.
+
+##### Ahora, veamos que $f$ es inyectiva:
+
+Sean $\alpha,\beta\in S_n$ tales que $f(\alpha)=f(\beta)$, entonces $\varphi_\alpha(m,n)=\varphi_\beta(m,n)$ para todos $m\in\mathbb{Z_m}$ y $n\in\mathbb{Z_n}$, particularmente $\varphi_\alpha(1,n)=\varphi_\beta(1,n)$, esto es, $\alpha(n)=\beta(n)$ para todo $n\in\mathbb{Z_n}$ por lo que concluimos $\alpha=\beta$.
+
+##### Por último, veamos que $f$ es sobreyectiva:
+
+Sea una acción $\varphi_x\in\Phi$, sabemos que $\varphi_x(1,n)\in\mathbb{Z_n}$ para todo $n\in\mathbb{Z_n}$. Así, definimos $y\in S_n$ dado por
+
+$$
+\begin{align*}y:N&\to N\\k&\mapsto\varphi_x(1,k)\end{align*}
+$$
+
+Donde $N=\{0,1,...,n-1\}$.
+
+Veamos que $f(y)=\varphi_x$:
+
+Por la construcción misma, sabemos que $\varphi_y(1,k)=y^1(k)=y(k)=\varphi_x(1,k)$, y como $\lang1\rang=\mathbb{Z_m}$, el resto de imágenes coinciden naturalmente, finalmente usando que $(m,n)=1$, tenemos que $\varphi_y(m,k)=y^m(k)$

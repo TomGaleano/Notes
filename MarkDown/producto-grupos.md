@@ -106,7 +106,10 @@ Entonces $G\cong\prod^w N$.
 
 Sea $f\in\prod^w N$, sabemos que $I_f$ es finito y podemos definir $\prod_{i\in I_f}f(i)$ como un elemento de $G$, por otro lado, por la segunda condición sabemos que si $j\neq k$, $a_ka_j=a_ja_k$ para todos $a_j\in N_j,\ a_k\in N_j$. Así planteamos
 
+$$
 \begin{align*}\varphi: \prod^w N&\to G\\ f&\mapsto\prod_{i\in I_f}f(i)\end{align*}
+$$
+
 Veamos que $\varphi$ es un homomorfismo:
 Sean $h,j\in\prod^wN$, $\varphi(h\circledast j)=\prod_{i\in I_0}(h\circledast j)(i)$ donde $I_0=\{i\in I:h(i)\cdot j(i)\neq e\}$ que sabemos es subconjunto de $I_h\cup I_j$, como $I_h$ e $I_j$ son finitos, $|I_0|\leq|I_h|+|I_j|$, así tenemos una productoria finita y por tanto
 
@@ -206,3 +209,46 @@ G\cong\prod_{i=1}^n\mathbb{Z_{p_i}^{k_i}}\times\mathbb{Z}^m
 $$
 
 Donde $n$ y $m$ son únicos.
+
+## Propiedad universal del Producto:
+
+Sean $G=\{G_i\}_{i\in I}G_i$ una familia de grupos, $\prod G$ el producto usual y $\pi=\{\pi_j:\prod G\to G_j\}_{j\in I}$ las proyecciones canónicas. Entonces,
+
+1. Para cada grupo $H$ con homomorfismos $\{p_j:H\to G_j\}_{j\in I}$, existe un único homomorfismo $\alpha:H\to\prod G$ tal que $\pi_j\alpha=p_j$ para todo $j\in I$.
+   
+   > Esto nos dice que si un grupo $H$ tiene homomorfismos hacia cada grupo de la familia $G$, entonces existe un homomorfismo $\alpha$ hacia $\prod G$ caracterizado por sus $p_j$.
+
+2. Si otro grupo $K$ que tenga $\pi'=\{\pi':K\to G_j\}_{j\in I}$ y también tenga la propiedad (1), es isomorfo a $\prod G$.
+   
+   > Es decir, que $K$ cumple varias de las propiedades de $\prod G$, y esas propiedades son suficientes para garantizar que $K$ y $\prod G$ son isomorfos.
+
+#### Demostración:
+
+1. Básicamente queremos definir un $\alpha$ tal que el siguiente diagrama sea conmutativo:
+   
+   ![](/home/tgaleano/.config/marktext/images/2024-06-20-10-35-37-image.png)
+   
+   Así, que definimos 
+   
+   $$
+   \begin{align*}\alpha: K&\to\prod G\\x&\mapsto y\end{align*}
+   $$
+   
+   Donde $y(i)=p_i(x)$ para todo $i\in I$. Así, usando que el producto es componente a componente y que todos los conjuntos son grupos, tenemos que $\alpha$ es un homomorfismo. Por la construcción misma, $\pi_j\alpha=p_j$ y es fácil ver la unicidad.
+
+2. Tenemos los siguientes diagramas:
+   ![](/home/tgaleano/.config/marktext/images/2024-06-20-10-45-58-image.png)
+   
+   - (1) lo tenemos pues es un caso particular de la primera propiedad.
+   
+   - (2) se tiene así mismo pues $K$ es un grupo con homomorfismos hacia cada grupo de $G$ entonces tenemos garantizada la existencia y unicidad de $\alpha$.
+   
+   - (3) y (4) son análogos a (1) y (2) respectivamente.
+   
+   Así, sabemos que $\pi_j'\beta=\pi_j$ y $\pi_j\alpha=\pi_j'$ por lo que tenemos que 
+   
+   $$
+   \begin{align*}\pi'_j(\beta\alpha)&=(\pi'_j\beta)\alpha\\&=\pi_j\alpha\\&=\pi'_j\end{align*}
+   $$
+   
+   y análogamente $\pi_j(\alpha\beta)=\pi_j$. Así, $\beta\alpha$ es una función de $K$ en $K$ tal que $\pi'_j(\beta\alpha)=\pi_j'$, sin embargo por el diagrama (3) sabemos que sólo existe una única función que cumple eso y es la identidad, por tanto $\beta\alpha=I_K$ y análogamente $\alpha\beta=I_{\prod G}$, por tanto se sabe que $\alpha$ y $\beta$ son biyecciones y como también son homomorfismos concluimos que $\prod G\cong K$.

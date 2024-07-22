@@ -110,8 +110,6 @@ La idea para demostrar que existen los $i$ gruos de orden $p^i$ gira alrededor d
 ### Definición:
 
 > - Si $|G|=p^nm$ donde $p$ es primo y $m$ un entero tal que $(p,m)=1$, entonces un subgrupo $H\leq G$ que cumpla que $|H|=p^n$ es llamado un $p$-subgrupo de Sylow.
-> 
-> Revisar esta definición
 
 ## $2^{\text{do}}\text{ Teorema de Sylow: }$
 
